@@ -15,7 +15,7 @@ const salesExperts = {
         city: "Bangalore"
     },
     Sealing: { 
-        name: "Ms.Manish", 
+        name: "Mr.Manish", 
         role: "Logistics Material Consultant",
         phone: "9958655713",
         whatsapp: "919958655713",
