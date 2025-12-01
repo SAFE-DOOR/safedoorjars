@@ -33,24 +33,27 @@ const salesExperts = {
 // --- Catalogue Product Data (FEAT 55: Catalogue Data) ---
 // Note: URLs are mock images (imgur) for demonstration purposes.
 const catalogueProducts = {
+    // FEAT 55.1: Small Jars (25 ML to 150 ML)
     'small-jars': [
-        { name: "25 ML Jar (Cosmo)", img: "https://i.imgur.com/k9b6o2R.png", desc: "Small jar suitable for cosmetics, powders, and Pujan material.", specs: "Capacity: 25ml, Cap Size: 30mm, Use: Powders, Cosmetics", stock: 'high', price: 3.50 },
-        { name: "60 ML Jar (Honey/Spice)", img: "https://i.imgur.com/p0B7fV4.png", desc: "Ideal for cosmetics, honey, spices, Pujan material, and slime.", specs: "Capacity: 60ml, Cap Size: 40mm, Use: Honey, Spices, Slime", stock: 'high', price: 4.90 },
-        { name: "100 ML Hira/Om", img: "https://i.imgur.com/fVzL9wE.png", desc: "Multi-purpose jar for Ghee, Pickles, Spices, and Cosmetics.", specs: "Capacity: 100ml, Cap Size: 53mm, Use: Ghee, Pickles, Spices", stock: 'low', price: 6.10 },
-        { name: "150 ML Jar (Pujan)", img: "https://i.imgur.com/eB3jVwK.png", desc: "Medium small size for cosmetics, honey, and Pujan material.", specs: "Capacity: 150ml, Cap Size: 58mm, Use: Cosmetics, Honey, Pujan", stock: 'high', price: 7.50 },
-        { name: "30 ML (Powder)", img: "https://i.imgur.com/j6sHqF8.png", desc: "Used in Cosmetics, Powders, Spices, Pujan Material etc.", specs: "Capacity: 30ml, Cap Size: 38mm, Use: Powders, Spices", stock: 'high', price: 4.10 },
-        { name: "40 ML (Slime/Kimaam)", img: "https://i.imgur.com/y8zH0QG.png", desc: "Used in Slime, Pujan Material, Kimaam etc.", specs: "Capacity: 40ml, Cap Size: 45mm, Use: Slime, Kimaam", stock: 'low', price: 4.50 },
-        { name: "75 ML (Cosmetic)", img: "https://i.imgur.com/g9vL5U3.png", desc: "Used in Cosmetics, Honey, Pujan Material etc.", specs: "Capacity: 75ml, Cap Size: 50mm, Use: Cosmetics, Honey", stock: 'high', price: 5.80 },
+        { name: "25 ML Jar (Cosmo)", img: "https://i.imgur.com/k9b6o2R.png", desc: "Small jar suitable for cosmetics, powders, and Pujan material. Cap Size: 30mm.", specs: "Capacity: 25ml, Cap Size: 30mm, Use: Powders, Cosmetics", stock: 'high', price: 3.50 },
+        { name: "60 ML Jar (Honey/Spice)", img: "https://i.imgur.com/p0B7fV4.png", desc: "Ideal for cosmetics, honey, spices, Pujan material, and slime. Cap Size: 40mm.", specs: "Capacity: 60ml, Cap Size: 40mm, Use: Honey, Spices, Slime", stock: 'high', price: 4.90 },
+        { name: "100 ML Hira/Om", img: "https://i.imgur.com/fVzL9wE.png", desc: "Multi-purpose jar for Ghee, Pickles, Spices, and Cosmetics. Cap Size: 53mm.", specs: "Capacity: 100ml, Cap Size: 53mm, Use: Ghee, Pickles, Spices", stock: 'low', price: 6.10 },
+        { name: "150 ML Jar (Pujan)", img: "https://i.imgur.com/eB3jVwK.png", desc: "Medium small size for cosmetics, honey, and Pujan material. Cap Size: 58mm.", specs: "Capacity: 150ml, Cap Size: 58mm, Use: Cosmetics, Honey, Pujan", stock: 'high', price: 7.50 },
+        { name: "30 ML (Powder)", img: "https://i.imgur.com/j6sHqF8.png", desc: "Used in Cosmetics, Powders, Spices, Pujan Material etc. Cap Size: 38mm.", specs: "Capacity: 30ml, Cap Size: 38mm, Use: Powders, Spices", stock: 'high', price: 4.10 },
+        { name: "40 ML (Slime/Kimaam)", img: "https://i.imgur.com/y8zH0QG.png", desc: "Used in Slime, Pujan Material, Kimaam etc. Cap Size: 45mm.", specs: "Capacity: 40ml, Cap Size: 45mm, Use: Slime, Kimaam", stock: 'low', price: 4.50 },
+        { name: "75 ML (Cosmetic)", img: "https://i.imgur.com/g9vL5U3.png", desc: "Used in Cosmetics, Honey, Pujan Material etc. Cap Size: 50mm.", specs: "Capacity: 75ml, Cap Size: 50mm, Use: Cosmetics, Honey", stock: 'high', price: 5.80 },
     ],
+    // FEAT 55.2: Medium Jars (200 ML to 650 ML)
     'medium-jars': [
-        { name: "250 ML Dumbell", img: "https://i.imgur.com/k6lP0Uq.png", desc: "Dumbell shape jar for pickles, spices, dry fruits, and kitchen storage.", specs: "Capacity: 250ml, Cap Size: 63mm, Use: Kitchen Storage, Pickles", stock: 'low', price: 8.80 },
-        { name: "400 ML Bournvita", img: "https://i.imgur.com/v8tT9f2.png", desc: "Bournvita shape, often used for protein powder, honey, and mukhwas.", specs: "Capacity: 400ml, Cap Size: 70mm, Use: Protein Powder, Honey", stock: 'high', price: 11.20 },
-        { name: "500 ML New Square", img: "https://i.imgur.com/Hl5uU6Y.png", desc: "Square jar for easy stacking, good for pickles and dry fruits.", specs: "Capacity: 500ml, Cap Size: 83mm, Use: Pickles, Dry Fruits", stock: 'high', price: 13.50 },
-        { name: "650 ML Bournvita", img: "https://i.imgur.com/3qC5pM0.png", desc: "Large size Bournvita design, specialized for protein powder and supplements.", specs: "Capacity: 650ml, Cap Size: 89mm, Use: Protein Powder", stock: 'low', price: 16.90 },
-        { name: "200 ML AM/Prabhat", img: "https://i.imgur.com/7wL5sVd.png", desc: "Used in Cosmetics, Pujan Material, Ghee, Pickles etc.", specs: "Capacity: 200ml, Cap Size: 63mm, Use: Ghee, Pickles", stock: 'high', price: 7.90 },
-        { name: "325 ML Round", img: "https://i.imgur.com/5uA8bM9.png", desc: "Used for Peanut Butter, Kitchen Storage etc.", specs: "Capacity: 325ml, Cap Size: 77mm, Use: Peanut Butter", stock: 'high', price: 10.50 },
-        { name: "500 ML Oval", img: "https://i.imgur.com/j6sHqF8.png", desc: "Used for Dry Fruits, Fancy Storage etc.", specs: "Capacity: 500ml, Cap Size: 58mm, Use: Dry Fruits, Fancy", stock: 'low', price: 12.80 },
+        { name: "250 ML Dumbell", img: "https://i.imgur.com/k6lP0Uq.png", desc: "Dumbell shape jar for pickles, spices, dry fruits, and kitchen storage. Cap Size: 63mm.", specs: "Capacity: 250ml, Cap Size: 63mm, Use: Kitchen Storage, Pickles", stock: 'low', price: 8.80 },
+        { name: "400 ML Bournvita", img: "https://i.imgur.com/v8tT9f2.png", desc: "Bournvita shape, often used for protein powder, honey, and mukhwas. Cap Size: 70mm.", specs: "Capacity: 400ml, Cap Size: 70mm, Use: Protein Powder, Honey", stock: 'high', price: 11.20 },
+        { name: "500 ML New Square", img: "https://i.imgur.com/Hl5uU6Y.png", desc: "Square jar for easy stacking, good for pickles and dry fruits. Cap Size: 83mm.", specs: "Capacity: 500ml, Cap Size: 83mm, Use: Pickles, Dry Fruits", stock: 'high', price: 13.50 },
+        { name: "650 ML Bournvita", img: "https://i.imgur.com/3qC5pM0.png", desc: "Large size Bournvita design, specialized for protein powder and supplements. Cap Size: 89mm.", specs: "Capacity: 650ml, Cap Size: 89mm, Use: Protein Powder", stock: 'low', price: 16.90 },
+        { name: "200 ML AM/Prabhat", img: "https://i.imgur.com/7wL5sVd.png", desc: "Used in Cosmetics, Pujan Material, Ghee, Pickles etc. Cap Size: 63mm.", specs: "Capacity: 200ml, Cap Size: 63mm, Use: Ghee, Pickles", stock: 'high', price: 7.90 },
+        { name: "325 ML Round", img: "https://i.imgur.com/5uA8bM9.png", desc: "Used for Peanut Butter, Kitchen Storage etc. Cap Size: 77mm.", specs: "Capacity: 325ml, Cap Size: 77mm, Use: Peanut Butter", stock: 'high', price: 10.50 },
+        { name: "500 ML Oval", img: "https://i.imgur.com/j6sHqF8.png", desc: "Used for Dry Fruits, Fancy Storage etc. Cap Size: 58mm.", specs: "Capacity: 500ml, Cap Size: 58mm, Use: Dry Fruits, Fancy", stock: 'low', price: 12.80 },
     ],
+    // FEAT 55.3: Large Jars (1 LITER to 6 LITER)
     'large-jars': [
         { name: "1 LITER New Round", img: "https://i.imgur.com/d8pX3sV.png", desc: "New round design ideal for Ghee, major kitchen storage, and bulk items.", specs: "Capacity: 1000ml, Cap Size: 89mm, Use: Ghee, Kitchen Storage", stock: 'high', price: 22.00 },
         { name: "2 LITER Dumbell", img: "https://i.imgur.com/s0B7fV4.png", desc: "Large volume Dumbell design for bulk pickles, spices, dry fruits, and food grains.", specs: "Capacity: 2000ml, Cap Size: 100mm, Use: Pickles, Food Grains", stock: 'low', price: 35.00 },
@@ -85,6 +88,18 @@ function toggleMobileMenu() {
 function scrollToProducts() {
     document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
 }
+
+function dismissAlertBar() {
+    const alertBar = document.getElementById('alertBar');
+    const mainNav = document.getElementById('mainNav');
+    const homeSection = document.getElementById('home');
+    
+    alertBar.classList.remove('alert-slide-down');
+    alertBar.classList.add('alert-slide-up');
+    
+    mainNav.style.top = '0';
+    homeSection.style.paddingTop = '90px'; 
+}
 // FEAT 1: Add Item to Floating Quote Cart
 function addToQuoteCart(productName, price) {
     quoteItems.push({ name: productName, price: price });
@@ -107,7 +122,7 @@ function updateQuoteCartDisplay() {
     }
 }
 
-// FEAT 56: Dynamic Product Filter (FEAT 56: Dynamic Filtered View)
+// FEAT 56: Dynamic Product Filter (New Clean View)
 function showProducts(view) {
     const indexSection = document.getElementById('products');
     const productViewSection = document.getElementById('productView');
@@ -141,7 +156,7 @@ function showProducts(view) {
             <div class="absolute top-4 right-4 stock-indicator ${stockClass}">${stockText}</div>
             <img src="${product.img}" alt="${product.name}" class="w-32 h-32 mx-auto mb-4 object-contain">
             <h3 class="text-lg font-semibold mb-1 text-center">${product.name}</h3>
-            <p class="text-xs text-gray-500 mb-3 text-center">${product.desc.substring(0, 35)}...</p>
+            <p class="text-xs text-gray-500 mb-3 text-center">${product.desc.substring(0, 50)}...</p>
             <p class="text-xl font-bold text-center text-purple-600 mb-4">₹${product.price.toFixed(2)}</p>
             
             <div class="space-y-2">
@@ -361,7 +376,7 @@ function connectExpert() {
             <div class="mt-3 flex flex-col space-y-2">
                 <a href="https://wa.me/${expert.whatsapp}?text=${whatsappMessage}" target="_blank" class="bg-green-600 text-white px-3 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 inline-flex items-center space-x-2 justify-center">
                     <i class="fab fa-whatsapp"></i> <span>Start WhatsApp Chat Now</span>
-                </a>
+                </a
                 <p class="text-xs text-gray-500 mt-2 text-center">No direct calling. Your expert will respond quickly via WhatsApp.</p>
             </div>
         `;
@@ -504,7 +519,6 @@ function openProductModal(title, description, specs, stockStatus, price) {
         specsList.appendChild(li);
     });
     
-    // 3. Update WhatsApp link
     const whatsappLink = document.getElementById('modalWhatsappLink');
     const encodedTitle = encodeURIComponent(title);
     whatsappLink.href = `https://wa.me/919958655713?text=I%20am%20interested%20in%20your%20${encodedTitle}%20product%20(Price%20Approx%20Rs%20${price}/unit).%20Please%20send%20bulk%20pricing.`;
@@ -519,16 +533,8 @@ function closeProductModal() {
     document.body.style.overflow = ''; 
 }
 
-function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('hidden');
-}
 
-function scrollToProducts() {
-    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
-}
-
-// --- General Event Listeners (FEAT 59: DOM Setup) ---
+// --- General Event Listeners ---
 document.addEventListener('DOMContentLoaded', () => {
     // Initial calls
     displayPriceAlert(); // Show the unique price alert
