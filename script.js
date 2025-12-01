@@ -1,31 +1,31 @@
 // --- Employee Data Mockup (FEAT 8: Expert Connect Data) ---
 const salesExperts = {
     Jars: { 
-        name: "Ms. Priya Singh", 
+        name: "Mr.Manish ", 
         role: "Plastic Jars Specialist",
         phone: "9958655713", 
         whatsapp: "919958655713",
         city: "Mumbai"
     },
     Boxes: { 
-        name: "Mr. Alok Verma", 
+        name: "Mr.Abhay", 
         role: "Corrugated Boxes Expert",
-        phone: "8810502513", 
-        whatsapp: "918810502513",
+        phone: "9871514017", 
+        whatsapp: "919871514017",
         city: "Bangalore"
     },
     Sealing: { 
-        name: "Ms. Kavita Reddy", 
+        name: "Ms.Manish", 
         role: "Logistics Material Consultant",
         phone: "9958655713",
         whatsapp: "919958655713",
         city: "Chennai"
     },
     Custom: { 
-        name: "Mr. Sameer Khan", 
+        name: "Mr.Abhay ", 
         role: "Bulk & Custom Order Manager",
-        phone: "8810502513", 
-        whatsapp: "918810502513",
+        phone: "9871514017", 
+        whatsapp: "919871514017",
         city: "Delhi"
     }
 };
@@ -55,11 +55,11 @@ const catalogueProducts = {
     ],
     // FEAT 55.3: Large Jars (1 LITER to 6 LITER)
     'large-jars': [
-        { name: "1 LITER New Round", img: "https://i.imgur.com/d8pX3sV.png", desc: "New round design ideal for Ghee, major kitchen storage, and bulk items.", specs: "Capacity: 1000ml, Cap Size: 89mm, Use: Ghee, Kitchen Storage", stock: 'high', price: 22.00 },
-        { name: "2 LITER Dumbell", img: "https://i.imgur.com/s0B7fV4.png", desc: "Large volume Dumbell design for bulk pickles, spices, dry fruits, and food grains.", specs: "Capacity: 2000ml, Cap Size: 100mm, Use: Pickles, Food Grains", stock: 'low', price: 35.00 },
-        { name: "5 LITER Square", img: "https://i.imgur.com/gA9mX5a.png", desc: "Large square container for bulk Ghee, Food Grains, and industrial storage.", specs: "Capacity: 5000ml, Cap Size: 120mm, Use: Bulk Ghee, Food Grains", stock: 'high', price: 85.00 },
-        { name: "6 LITER Square", img: "https://i.imgur.com/h9vL0wE.png", desc: "Largest square container for maximum volume storage.", specs: "Capacity: 6000ml, Cap Size: 120mm, Use: Maximum Bulk Storage", stock: 'low', price: 99.00 },
-        { name: "3 LITER Round", img: "https://i.imgur.com/l5uR0vK.png", desc: "Round Bottom Design for large volume Ghee and Pickles.", specs: "Capacity: 3000ml, Cap Size: 100mm, Use: Ghee, Pickles, Dry Fruits", stock: 'high', price: 48.00 },
+        { name: "1 LITER New Round", img: "https://i.imgur.com/d8pX3sV.png", desc: "New round design ideal for Ghee, major kitchen storage, and bulk items. Cap Size: 89mm.", specs: "Capacity: 1000ml, Cap Size: 89mm, Use: Ghee, Kitchen Storage", stock: 'high', price: 22.00 },
+        { name: "2 LITER Dumbell", img: "https://i.imgur.com/s0B7fV4.png", desc: "Large volume Dumbell design for bulk pickles, spices, dry fruits, and food grains. Cap Size: 100mm.", specs: "Capacity: 2000ml, Cap Size: 100mm, Use: Pickles, Food Grains", stock: 'low', price: 35.00 },
+        { name: "5 LITER Square", img: "https://i.imgur.com/gA9mX5a.png", desc: "Large square container for bulk Ghee, Food Grains, and industrial storage. Cap Size: 120mm.", specs: "Capacity: 5000ml, Cap Size: 120mm, Use: Bulk Ghee, Food Grains", stock: 'high', price: 85.00 },
+        { name: "6 LITER Square", img: "https://i.imgur.com/h9vL0wE.png", desc: "Largest square container for maximum volume storage. Cap Size: 120mm.", specs: "Capacity: 6000ml, Cap Size: 120mm, Use: Maximum Bulk Storage", stock: 'low', price: 99.00 },
+        { name: "3 LITER Round", img: "https://i.imgur.com/l5uR0vK.png", desc: "Round Bottom Design for large volume Ghee and Pickles. Cap Size: 100mm.", specs: "Capacity: 3000ml, Cap Size: 100mm, Use: Ghee, Pickles, Dry Fruits", stock: 'high', price: 48.00 },
     ]
 };
 let quoteItems = []; // FEAT 1: Quote Cart Data
@@ -99,6 +99,11 @@ function dismissAlertBar() {
     
     mainNav.style.top = '0';
     homeSection.style.paddingTop = '90px'; 
+}
+
+function openCatalogue() {
+    // FEAT 53.1: Catalogue Link opening the provided PDF.
+    window.open('jar-catalogue.pdf', '_blank');
 }
 // FEAT 1: Add Item to Floating Quote Cart
 function addToQuoteCart(productName, price) {
@@ -330,7 +335,7 @@ function trackOrder() {
 }
 
 
-// --- UNIQUE FEATURE 2: Sample Request Wizard Logic (UPDATED for 8810502513) ---
+// --- UNIQUE FEATURE 2: Sample Request Wizard Logic (UPDATED for 9871514017) ---
 function submitSampleRequest() {
     const sampleName = document.getElementById('sampleName').value;
     const samplePincode = document.getElementById('samplePincode').value;
@@ -350,12 +355,12 @@ function submitSampleRequest() {
         \n(My contact number is 9958655713).`
     );
     
-    // Redirect to WhatsApp number 8810502513 for payment confirmation
-    const whatsappURL = `https://wa.me/918810502513?text=${whatsappMessage}`;
+    // Redirect to WhatsApp number 9871514017 for payment confirmation
+    const whatsappURL = `https://wa.me/+91 98715 14017?text=${whatsappMessage}`;
     
     window.open(whatsappURL, '_blank');
     
-    alert("Redirecting to WhatsApp (8810502513) for ₹499 payment confirmation. Please send the message and pay the sample fee.");
+    alert("Redirecting to WhatsApp (9871514017) for ₹499 payment confirmation. Please send the message and pay the sample fee.");
     document.getElementById('sampleForm').reset();
 }
 
@@ -376,7 +381,7 @@ function connectExpert() {
             <div class="mt-3 flex flex-col space-y-2">
                 <a href="https://wa.me/${expert.whatsapp}?text=${whatsappMessage}" target="_blank" class="bg-green-600 text-white px-3 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 inline-flex items-center space-x-2 justify-center">
                     <i class="fab fa-whatsapp"></i> <span>Start WhatsApp Chat Now</span>
-                </a
+                </a>
                 <p class="text-xs text-gray-500 mt-2 text-center">No direct calling. Your expert will respond quickly via WhatsApp.</p>
             </div>
         `;

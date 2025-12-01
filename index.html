@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safe Door Jars | Pan India Delivery</title>
+    <title>Safe Door - 200+ Premium Packaging Features | Pan India Delivery</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -47,6 +47,7 @@
                     <a href="#sample-request" class="nav-item text-gray-700 hover:text-purple-600 transition">Get Sample</a>
                     <a href="#qa-certs" class="nav-item text-gray-700 hover:text-purple-600 transition">Certificates</a>
                     <a href="#reviews" class="nav-item text-gray-700 hover:text-purple-600 transition">Reviews</a>
+                    <a href="#" onclick="openCatalogue()" class="nav-item text-purple-600 font-bold transition">Full Catalogue</a>
                     <a href="#contact" class="nav-item text-gray-700 hover:text-purple-600 transition">Contact</a>
                 </div>
                 <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
@@ -63,6 +64,7 @@
                 <a href="#sample-request" class="block py-2 text-gray-700 hover:text-purple-600">Get Sample</a>
                 <a href="#qa-certs" class="block py-2 text-gray-700 hover:text-purple-600">Certificates</a>
                 <a href="#reviews" class="block py-2 text-gray-700 hover:text-purple-600">Reviews</a>
+                <a href="#" onclick="openCatalogue()" class="block py-2 text-purple-600 font-bold">Full Catalogue</a>
                 <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600">Contact</a>
             </div>
         </div>
@@ -156,13 +158,17 @@
                 <h2 class="text-4xl font-bold mb-4">Explore Our Jar Categories (50+ Variants)</h2>
                 <p class="text-xl text-gray-600">Select a category to view the full range and add items to your quote list.</p>
             </div>
+            
+            <a href="#" onclick="openCatalogue()" class="flex items-center justify-center text-purple-600 font-bold mb-8 hover:underline text-lg">
+                <i class="fas fa-file-pdf mr-2"></i> Click here to view the Full Jar Catalogue PDF
+            </a>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="product-card bg-gray-50 p-6 rounded-xl shadow-lg cursor-pointer hover:shadow-2xl transition" 
                      onclick="showProducts('small-jars')">
                     <div class="flex justify-between items-center">
                         <i class="fas fa-bottle-droplet text-4xl text-purple-600"></i>
-                        <span class="text-4xl font-bold text-gray-300">14+</span>
+                        <span class="text-4xl font-bold text-gray-300">7 Jars</span>
                     </div>
                     <h3 class="text-2xl font-semibold mt-4 mb-2">Small Jars (25 ML - 150 ML)</h3>
                     <p class="text-gray-600">Cosmetics, Powders, Spices, Pujan Material</p>
@@ -172,7 +178,7 @@
                      onclick="showProducts('medium-jars')">
                     <div class="flex justify-between items-center">
                         <i class="fas fa-utensils text-4xl text-purple-600"></i>
-                        <span class="text-4xl font-bold text-gray-300">10+</span>
+                        <span class="text-4xl font-bold text-gray-300">7 Jars</span>
                     </div>
                     <h3 class="text-2xl font-semibold mt-4 mb-2">Medium Jars (200 ML - 650 ML)</h3>
                     <p class="text-gray-600">Pickles, Honey, Protein, Kitchen Storage</p>
@@ -182,7 +188,7 @@
                      onclick="showProducts('large-jars')">
                     <div class="flex justify-between items-center">
                         <i class="fas fa-warehouse text-4xl text-purple-600"></i>
-                        <span class="text-4xl font-bold text-gray-300">5+</span>
+                        <span class="text-4xl font-bold text-gray-300">5 Jars</span>
                     </div>
                     <h3 class="text-2xl font-semibold mt-4 mb-2">Large Jars (1 LTR - 6 LTR)</h3>
                     <p class="text-gray-600">Ghee, Food Grains, Bulk Storage</p>
@@ -209,9 +215,9 @@
                     </div>
                     <h3 class="text-2xl font-semibold mb-3 text-center">Sealing Materials</h3>
                     <p class="text-gray-600 mb-4 text-center">Tapes, stretch films, and secure packaging.</p>
-                    <div class="absolute top-4 right-4 stock-indicator out-of-stock">Out of Stock</div>
-                    <button class="w-full bg-red-400 text-white py-3 rounded-lg cursor-not-allowed" disabled>
-                        Out of Stock
+                    <div class="absolute top-4 right-4 stock-indicator out-of-stock">Low Stock</div>
+                    <button class="w-full bg-red-400 text-white py-3 rounded-lg cursor-not-allowed" >
+                        Quick View
                     </button>
                 </div>
 
@@ -392,13 +398,7 @@
                 <h2 class="text-4xl font-bold mb-4">Quality Assurance & Certifications 🔒</h2>
                 <p class="text-xl text-gray-600">Trust us with your packaging needs - our quality is globally certified.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
-                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-green-500">
-                    <i class="fas fa-certificate text-5xl text-green-500 mb-3"></i>
-                    <h3 class="font-bold text-xl mb-2">ISO 9001:2015</h3>
-                    <p class="text-sm text-gray-600">Certified for quality management systems.</p>
-                    <a href="#" onclick="alert('Viewing ISO Certificate PDF (Mock)'); return false;" class="text-purple-600 font-semibold text-sm mt-2 block hover:underline">View Certificate</a>
-                </div>
+            sea
                 <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-blue-500">
                     <i class="fas fa-utensils text-5xl text-blue-500 mb-3"></i>
                     <h3 class="font-bold text-xl mb-2">Food Grade Approved</h3>
@@ -550,7 +550,7 @@
                     <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-headset text-white text-2xl"></i>
                     </div>
-                    <h3 class="font-semibold text-lg mb-2">24/7 Support</h3>
+                    <h3 class="font-semibold text-lg mb-2"> Support</h3>
                     <p class="text-gray-600">Round the clock customer service</p>
                 </div>
             </div>
@@ -652,8 +652,16 @@
                         <p class="text-lg font-semibold mb-3">Or Contact Us Directly:</p>
                         <div class="flex flex-wrap justify-center gap-6">
                             <span class="text-gray-700 flex items-center space-x-2">
-                        
-      </span>     <a href="mailto: safedoor08@gmail.com" class="text-gray-700 hover:text-purple-600 transition flex items-center space-x-2">       <i class="fas fa-envelope"></i>                <span>safedoor08@gmail.com</span>
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 99586 55713 (Sales/Inquiry)</span>
+                            </span>
+                            <a href="https://wa.me/919958655713?text=Hello%20Safe%20Door,%20I%20have%20a%20query%20regarding%20packaging." target="_blank" class="text-green-600 hover:text-green-700 transition flex items-center space-x-2 font-bold">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                <span>WhatsApp (9958655713)</span>
+                            </a>
+                            <a href="mailto: safedoor08@gmail.com" class="text-gray-700 hover:text-purple-600 transition flex items-center space-x-2">
+                                <i class="fas fa-envelope"></i>
+                                <span>safedoor08@gmail.com</span>
                             </a>
                         </div>
                     </div>
@@ -698,7 +706,7 @@
                         <i class="fas fa-calendar-times text-purple-400 mr-2"></i>
                         **Sunday:** Closed
                     </p>
-                    <p class="text-sm text-gray-500 mt-3">24/7 Support via Email/WhatsApp</p>
+                    <p class="text-sm text-gray-500 mt-3"> Support via Email/WhatsApp</p>
                 </div>
                 <div>
                     <h4 class="font-semibold text-lg mb-4 text-purple-300">Contact Info</h4>
@@ -708,7 +716,7 @@
                     </p>
                     <p class="text-gray-400 flex items-center space-x-2 mb-2">
                         <i class="fas fa-envelope text-purple-400"></i>
-                        <a href="mailto: safedoor08@gmail.com" class="hover:text-white transition">safedoor08@gmail.com</a>
+                        <a href="mailto:safedoor08@gmail.com" class="hover:text-white transition">safedoor08@gmail.com</a>
                     </p>
                     <p class="text-gray-400 flex items-center space-x-2">
                     
