@@ -8,7 +8,7 @@ const salesExperts = {
         city: "Mumbai"
     },
     Boxes: { 
-        name: "Mr.Abhay", 
+        name: "Mr.Abhay Ray", 
         role: "Corrugated Boxes Expert",
         phone: "9871514017", 
         whatsapp: "919871514017",
@@ -22,7 +22,7 @@ const salesExperts = {
         city: "Chennai"
     },
     Custom: { 
-        name: "Mr.Abhay ", 
+        name: "Mr.Abhay Ray ", 
         role: "Bulk & Custom Order Manager",
         phone: "9871514017", 
         whatsapp: "919871514017",
@@ -352,7 +352,7 @@ function submitSampleRequest() {
         \n- Pincode: ${samplePincode}
         \n- Items Requested: ${sampleProducts}
         \n- Confirmation: I am ready to pay the ₹499 sample fee via UPI/Bank transfer.
-        \n(My contact number is 9958655713).`
+        \n.`
     );
     
     // Redirect to WhatsApp number 9871514017 for payment confirmation
